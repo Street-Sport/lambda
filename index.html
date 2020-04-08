@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CMontserrat:300,400,600,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
+</head>
+<body>
+  
+  <header class="header" id="header">
+    <div class="container">
+      <div class="row">
+
+        <div class="user">
+          <div class="user__avatar">
+            <img src="img/header/iAm.jpg" alt="">
+          </div>
+          <div class="user__content">
+            <div class="user__name">
+              Шевченко<br>Виталий
+            </div>
+            <div class="user__prof">Web developer &amp; <span class="decor">Designer</span></div>
+          </div> 
+        </div>
+
+        <nav class="nav" id="nav">
+          <ul class="ul-deco">
+            <li class="li-deco">
+              <a class="a-deco" href="#" data-scroll="#works">Работы
+                <span class="span-deco"></span>
+                <span class="span-deco"></span>
+                <span class="span-deco"></span>
+                <span class="span-deco"></span>
+              </a>
+            </li>
+            <li class="li-deco">
+              <a class="a-deco" href="#" data-scroll="#skills">Skills
+                <span class="span-deco"></span>
+                <span class="span-deco"></span>
+                <span class="span-deco"></span>
+                <span class="span-deco"></span>
+              </a>
+            </li>
+            <li class="li-deco">
+              <a class="a-deco" href="#" data-scroll="#about-me">Обо&ensp;мне
+                <span class="span-deco"></span>
+                <span class="span-deco"></span>
+                <span class="span-deco"></span>
+                <span class="span-deco"></span>
+              </a>
+            </li>
+            <li class="li-deco">
+              <a class="a-deco" data-modal="#modal_hire_me" href="#">Контакты
+                <span class="span-deco"></span>
+                <span class="span-deco"></span>
+                <span class="span-deco"></span>
+                <span class="span-deco"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-toggle" id="nav_toggle" type="button">
+          <span class="nav-toggle__item">Menu</span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+  
+  <section class="intro" id="intro">
+    <div class="container row">
+      <div class="intro__info">
+        <h3 class="intro__title"><span class="intro__title-deco">Привет, меня зовут</span><br>Шевченко Виталий</h3>
+        <p class="intro__text">Я занимаюсь разработкой сайтов!</p>
+        <div class="intro__ico">
+          <img class="intro__ico--mod" src="img/intro/vscod.png" alt="">
+          <img class="intro__ico--mod" src="img/intro/ps.png" alt="">
+          <img class="intro__ico--mod" src="img/intro/xd.png" alt="">
+          <img class="intro__ico--mod" src="img/intro/figma.png" alt="">
+          <img class="intro__ico--mod" src="img/intro/zeplin.png" alt="">
+          <img class="intro__ico--mod" src="img/intro/wp.png" alt="">
+          <img class="intro__ico--mod" src="img/intro/ghub.png" alt="">
+        </div>
+        <div class="intro__link">
+          <a class="btn-bg" href="#" data-modal="#modal_hire_me">СВЯЗАТЬСЯ</a>
+          <a class="btn-bg btn-bg--inver" href="#" data-modal="#resume">МОЕ РЕЗЮМЕ</a>
+        </div>
+      </div>
+      <div class="intro__photo">
+      </div>
+    </div>
+  </section>
+
+  <section class="works" id="works">
+    <div class="container">
+      <h2 class="works__title">My works</h2>
+
+      <!--НАВИГАЦИЯ-->
+      <div class="works__nav">
+        <a class="works__nav-link black" href="#" data-filter="all">Все работы</a>
+        <a class="works__nav-link red" href="#" data-filter="app">Сайты</a>
+        <a class="works__nav-link green" href="#" data-filter="website">Дизайн</a>
+        <a class="works__nav-link purple" href="#" data-filter="interaction">Остальное</a>
+      </div>
+      
+      <!--ВКЛАДКИ-->
+      <div class="portfolio" id="portfolio">
+
+      <div class="portfolio__col" data-cat="app">
+        <div class="work red" data-modal="#modal_project_hunger">
+          <img class="work__image" src="img/works/hunger.jpg" alt="">
+          <div class="work__content">
+            <div class="work__cat">Категория: САЙТЫ</div>
+            <div class="work__title">Hunger
+              <time class="work__date" datetime="2019-11-22 19:00">2020</time>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio__col" data-cat="app">
+        <div class="work red" data-modal="#modal_project_deco"> <img class="work__image" src="img/works/deco.jpg" alt="">
+          <div class="work__content">
+            <div class="work__cat">Категория: САЙТЫ</div>
+            <div class="work__title">Deco blog
+              <time class="work__date" datetime="2019-11-22 19:00">2020</time>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="portfolio__col" data-cat="app">
+          <div class="work red" data-modal="#modal_project_lambda"> <img class="work__image" src="img/works/lambda.jpg" alt="">
+            <div class="work__content">
+              <div class="work__cat">Категория: САЙТЫ</div>
+              <div class="work__title">lambda
+                <time class="work__date" datetime="2019-11-22 19:00">2020</time>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      
+        <div class="portfolio__col" data-cat="website">
+          <div class="work green" data-modal="#modal_project_NYC"> <img class="work__image" src="img/works/nyc.jpg" alt="">
+            <div class="work__content">
+              <div class="work__cat">Категория: Дизайн</div>
+              <div class="work__title">NYC
+                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="portfolio__col" data-cat="interaction">
+          <div class="work purple" data-modal="#modal_project_phoenix"> <img class="work__image" src="img/works/phoenix.jpg" alt="">
+            <div class="work__content">
+              <div class="work__cat">Категория: Остальное</div>
+              <div class="work__title">phoenix
+                <time class="work__date" datetime="2019-11-22 19:00">2020</time>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="portfolio__col" data-cat="website">
+          <div class="work green" data-modal="#modal_project_poster"> <img class="work__image" src="img/works/poster.jpg" alt="">
+            <div class="work__content">
+              <div class="work__cat">Категория: Дизайн</div>
+              <div class="work__title">Плакат
+                <time class="work__date" datetime="2019-11-22 19:00">2016</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio__col hide" data-cat="app">
+          <div class="work red" data-modal="#modal_project_surf"> <img class="work__image" src="img/works/surf.jpg" alt="">
+            <div class="work__content">
+              <div class="work__cat">Категория: САЙТЫ</div>
+              <div class="work__title">Surf
+                <time class="work__date" datetime="2019-11-22 19:00">2020</time>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__col hide" data-cat="website">
+          <div class="work green" data-modal="#modal_project_ss"> <img class="work__image" src="img/works/ss.jpg" alt="">
+            <div class="work__content">
+              <div class="work__cat">Категория: Дизайн</div>
+              <div class="work__title">Street-Sport
+                <time class="work__date" datetime="2019-11-22 19:00">2015</time>
+              </div>
+            </div>
+          </div>
+        </div>
+             
+        <div class="portfolio__col hide" data-cat="app">
+          <div class="work red" data-modal="#modal_project_mogo"> <img class="work__image" src="img/works/mogo.jpg" alt="">
+            <div class="work__content">
+              <div class="work__cat">Категория: САЙТЫ</div>
+              <div class="work__title">mogo
+                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.portfolio -->
+      <div class="center">
+        <a class="btn-bg btn-bg--deco " href="#">ПОКАЗАТЬ ЕЩЕ</a>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="skill" id="skills">
+    <h3 class="works__title--deco">Моя кухня приготовления сайта</h3>
+    <!-- <h2 class="works__title">Hard skills</h2> -->
+    
+    <div class="skill__inner">
+      <div class="container row">
+
+        <div class="skill__block">
+          <p>Всю необходимую информацию в виде текста, картинок и тд., помещаем в <b>HTML</b>; добавляем ложечку <b>БЭМ</b> для вкуса и <b>EMMET</b> для
+          скорости.</p>
+          <img src="img/skill/1-1.png" alt="">
+        </div>
+        <div class="skill__block">
+          <p>Теперь украсим это все с помощью <b>CSS</b> с использованием <b>SCSS</b> и добавлением адаптивности и кроссбраузерности.</p>
+          <img src="img/skill/2-2.png" alt="">
+        </div>
+        <div class="skill__block">
+          <p>Придадим сайту динамичности и куртых эффектов благадоря <b>JS/jQuery</b></p>
+          <img src="img/skill/3-3.png" alt="">
+        </div>
+        <div class="skill__block">
+          <p>Перемешаем это все с помощью <b>GULP</b>+<b>Npm</b> и вуаля &#9745;, фронтендная (визуальная) часть сайта готова.</p>
+          <img src="img/skill/4-1.png" alt="">
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <div class="about-me" id="about-me">
+    <div class="container">
+      <div class="about-me__inner">
+        
+        <!-- <img src="img/footer/footer-i.jpg" alt=""> -->
+        <div class="about-me__content">
+          <h3 class="about-me__title">Обо мне</h3>
+          <p class="about-me__text">Впервые с веб разработкой я познакомился еще в школьные годы (где-то в 2006м), в то время я активно слушал одну
+          популярную зарубежную группу и решил сделать в честь неё сайт. В те годы с web информацией было туго, а доступ в интернет
+          был отнюдь не дешевый и приходилось посещать сайты на компрьюторе через мобильник по кабелю. Медленная килобайтная
+          романтика... Первый мой "сайт" был создан на конструкторе народ.ру, а следующий посещаемый людьми был построен на платформе ucoz. Дебютный же серьезный мой проект появился в далеком 2015 году. До этого я активно изучал WEB и Wordpress в частности на протяжении полугода. Проект называется Street-Sport.com, которым я занимаюсь по нынишний день. Сперва дела шли
+          отлично, но потом рост проекта остановился. Не получая долгое время профит было решено временно оставить проект и пойти работаь.
+          После нескльких лет желание развиваться в веб технологиях взяло свое и я сова начал изучаь сайтостроение. И вот сейчас,
+          тратя тонны времени на изучение я медленно но уверено иду к своей мечте. То, чему я научися за эти годы, Вы сможете оценить в
+          моем портфолио. Спасибо за внимание (особенно, если Вы прочитали данный текст до конца)!</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner row">
+        <p class="footer-copyr">BA/\KEP© 2020</p>
+        <div class="con-tooltip top right" >
+          <button id="copy">МОЯ ПОЧТА</button>
+          <div class="tooltip">
+            <p id="text">BA/\KEP@Gmail.com</p>
+          </div>      
+        </div>
+        <nav class="footer-nav">
+          <a class="footer-nav__link" href="#" data-scroll="#works">Работы</a>
+          <a class="footer-nav__link" href="#" data-scroll="#skills">Skill</a>
+          <a class="footer-nav__link" href="#" data-modal="#modal_hire_me">Связаться</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal-->
+  <div class="modal" id="modal_hire_me">
+    <div class="modal__dialog  modal__dialog--sm">
+  
+      <button class="modal__close" type="button" data-close>&#10006;</button>
+  
+      <div class="contact">
+        <div class="contact__left">
+          <h3 class="modal__title">Мои контакты</h3>
+          <h4 class="modal__subtitle">Если у вас имеются какие-либо вопросы/предложения или  прочее, — напишите мне на email адрес, либо позвоните.</h4>
+  
+          <ul class="contact__info">
+            <li class="contact__info-item">
+              &#9742;
+              +38 095-34-35-700
+            </li>
+            <li class="contact__info-item">
+              &#9993; 
+              designer@ui43.com
+            </li>
+          </ul>
+
+       </div><!-- /.contact__left -->
+       <img class="contact__right" src="img/sandme.jpg" alt="">
+    </div><!-- /.contact -->
+                    
+  </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+
+  <!-- Modal-->
+  <div class="modal" id="resume">
+    <div class="modal__dialog  modal__dialog--sm">
+  
+      <button class="modal__close" type="button" data-close>&#10006;</button>
+  
+      <div class="resume">
+        <img src="img/resume/resume-me.jpg" alt="">
+        <h1 class="resume-title">Шевченко Виталий Сергеевич</h1>
+        <p><b>Дата рождения:</b> <span class="tac">04.12.1990 г., (29)</span></p>
+        <p><b>Хобби:</b> IT-технологии, дизайн, спорт.</p>
+        <p><b>Мобильный телефон:</b> 095-34-35-700</p>
+        <p><b>Почта:</b> gvitoss@gmail.com</p>
+        <p>Занимаюсь разработкой сайтов более 2 лет, каждый день изучаю новые технологии, подходы и решения. Люблю интересные и
+        сложные проекты. Веб разработка для меня не просто работа, но и большое хобби, которое я люблю.</p>
+        <p><span class="big">Образование</span>: Закончил институт Донецкого национального технического университета (АДИ), факультет экономики и
+        управления, специальность «менеджмент организаций» диплом бакалавра.</p>
+        <h2><span class="line">Мои навыки</span></h2>
+        <h3 class="big">Продвинутые знания по верстки HTML5 и CSS3</h3>
+        
+        <ul>
+          <li>Адаптивная верстка;</li>
+          <li>Кроссбраузерность;</li>
+          <li>Чистый и валидный код;</li>
+          <li>Работа с flexbox\float;</li>
+          <li>БЭМ;</li>
+          <li>Gulp;</li>
+          <li>Less/Scss;</li>
+          <li>jQuery (гамбургер меню, якоря, слайды, фиксированное меню, гармошки, табы, модельные окна).</li>
+        </ul>
+
+        <h3 class="big">Photoshop + (Figma)</h3>
+        <ul>
+          <li>Создание баннеров, визиток, плакатов, флаеров;</li>
+          <li>Работа с фотографией (ретуш, цветокоррекция и т.д.);</li>
+          <li>Разработка PSD макетов сайтов (landing page и wordpress тем);</li>
+          <li>Оптимизация картинок перед выгрузкой на интернет ресурсы.</li>
+        </ul>
+
+        <h3 class="big">WordPress</h3>
+        <ul>
+          <li>Полное администрирование (наполнение, модерация, работа с комментариями);</li>
+          <li>Установка и настройка самого WordPress;</li>
+          <li>Установка и настройка плагинов;</li>
+          <li>Работа с robots.txt, оптимизация базы данных, частичная настройка htaccess;</li>
+          <li>Оптимизация скорости работы сайтов;</li>
+          <li>SEO оптимизация (внутренняя и внешняя).</li>
+        </ul>
+
+        <h3 class="big">Работа с текстом</h3>
+        <ul>
+          <li>Работа с Wordstat и Bukvarix;</li>
+          <li>Проверка уникальности;</li>
+          <li>Проверка академической тошноты, процента воды в тексте и тошноты по слову;</li>
+          <li>SEO (оптимизация заголовков, ключевых слов, meta, основных ключей, подзаголовков).</li>
+        </ul>
+
+        <h3 class="big">По мелочам</h3>
+        <p>SEO аудит сайтов и тестирование на ошибки, Bootstrap 4, сжатие всего кода (html, css, js), оптимизация скорости загрузки
+        сайта</p>
+
+        <h3 class="big">Дополнительная информация:</h3>
+        <p>Являюсь вебмастером (https://street-sport.com), владею хорошими знаниями ПК и офисных программ + WordPress, Metrika,
+        Adsense, Wordstat.</p>
+        <p><b>Личные качества</b>: трудолюбивый, ответственный, целенаправленный, активный по жизни.</p>
+
+      </div>
+  
+    </div><!-- /.modal__dialog -->
+  </div><!-- /.modal -->
+
+
+
+<!-- Modals NYC -->
+<div class="modal" id="modal_project_NYC">
+  <div class="modal__dialog">
+
+    <button class="modal__close" type="button" data-close>&#10006;</button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+
+
+       <img class="modal-work__photo" src="img/works/nyc-window.jpg" style="cursor: zoom-in;" alt="">
+
+      </div>
+      <div class="modal-work__content">
+
+        <div class="modal-work__header">
+          <h3 class="modal-work__title">new york city</h3>
+          <div class="modal-work__info">
+            Дизайн <span class="modal-work__info-divider">|</span> 2019
+          </div>
+        </div>
+
+        <div class="modal-work__text">
+          <p>Дизайн сайта экскурсий по Нью-Йорку, который был сделан в 2019 году. Основная дизайнерская черта макета - это косые линии. Сама идея перевернутого города (которая используется в шапке сайта) была взята из фильма "Начало".</p>
+        </div>
+
+        <a href="img/works/nyc-window.jpg" target="blank" class="modal-work__client-title">| ОТКРЫТЬ | </a>
+
+
+      </div><!-- /.modal-work__content -->
+    </div>
+    <!--/.modal-work -->
+
+  </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<!-- Modals hunger -->
+<div class="modal" id="modal_project_hunger">
+  <div class="modal__dialog">
+
+    <button class="modal__close" type="button" data-close>&#10006;</button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+
+        <a target="blank" href="https://street-sport.github.io/hunger/">
+          <img src="img/works/hunger-window.jpg" style="cursor: zoom-in;" alt="">
+        </a>
+      </div>
+      <div class="modal-work__content">
+
+        <div class="modal-work__header">
+          <h3 class="modal-work__title">hunger</h3>
+          <div class="modal-work__info">
+            Сайты <span class="modal-work__info-divider">|</span> 2020
+          </div>
+        </div>
+
+        <div class="modal-work__text">
+          <p>Верстка landing-page по готовому макету. На сайте используется анимация, двойное меню, плавные якоря, svg-анимация, табы, слайдеры, Pop-Up галереи, формы и карта.</p>
+        </div>
+
+        <a href="https://street-sport.github.io/hunger/" target="blank" class="modal-work__client-title">| ОТКРЫТЬ | </a>
+
+
+      </div><!-- /.modal-work__content -->
+    </div>
+    <!--/.modal-work -->
+
+  </div><!-- /.modal__dialog -->
+</div><!-- /.modal --> 
+
+<!-- Modals lambda -->
+<div class="modal" id="modal_project_lambda">
+  <div class="modal__dialog">
+
+    <button class="modal__close" type="button" data-close>&#10006;</button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+
+        <a target="blank" href="https://street-sport.github.io/hunger/">
+          <img src="img/works/lambda-window.jpg" style="cursor: zoom-in;" alt="">
+        </a>
+      </div>
+      <div class="modal-work__content">
+
+        <div class="modal-work__header">
+          <h3 class="modal-work__title">lambda</h3>
+          <div class="modal-work__info">
+            Сайты <span class="modal-work__info-divider">|</span> 2020
+          </div>
+        </div>
+
+        <div class="modal-work__text">
+          <p>Верстка landing-page по готовому макету. На сайте используется фиксированное меню, плавные якоря,
+             адаптив, формы и svg.</p>
+        </div>
+
+        <a href="https://street-sport.github.io/hunger/" target="blank" class="modal-work__client-title">| ОТКРЫТЬ |
+        </a>
+
+
+      </div><!-- /.modal-work__content -->
+    </div>
+    <!--/.modal-work -->
+
+  </div><!-- /.modal__dialog -->
+</div><!-- /.modal --> 
+
+<!-- Modals DECO -->
+<div class="modal" id="modal_project_deco">
+  <div class="modal__dialog">
+
+    <button class="modal__close" type="button" data-close>&#10006;</button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+
+        <a target="blank" href="https://street-sport.github.io/hunger/">
+          <img src="img/works/deco-window.jpg" style="cursor: zoom-in;" alt="">
+        </a>
+      </div>
+      <div class="modal-work__content">
+
+        <div class="modal-work__header">
+          <h3 class="modal-work__title">deco blog</h3>
+          <div class="modal-work__info">
+            Сайты <span class="modal-work__info-divider">|</span> 2020
+          </div>
+        </div>
+
+        <div class="modal-work__text">
+          <p>Верстка wordpress темы по готовому макету. На сайте используется бергер меню, слайдеры, float подход, изменяющаяся сетка постов, формы, карта,
+            адаптив, font awesome.</p>
+        </div>
+
+        <a href="https://street-sport.github.io/hunger/" target="blank" class="modal-work__client-title">| ОТКРЫТЬ |
+        </a>
+
+
+      </div><!-- /.modal-work__content -->
+    </div>
+    <!--/.modal-work -->
+
+  </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<!-- Modals surf -->
+<div class="modal" id="modal_project_surf">
+  <div class="modal__dialog">
+
+    <button class="modal__close" type="button" data-close>&#10006;</button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+
+        <a target="blank" href="https://street-sport.github.io/hunger/">
+          <img src="img/works/surf-window.jpg" style="cursor: zoom-in;" alt="">
+        </a>
+      </div>
+      <div class="modal-work__content">
+
+        <div class="modal-work__header">
+          <h3 class="modal-work__title">go-surf</h3>
+          <div class="modal-work__info">
+            Сайты <span class="modal-work__info-divider">|</span> 2020
+          </div>
+        </div>
+
+        <div class="modal-work__text">
+          <p>Верстка landing-page по готовому макету. На сайте используется бургер меню, слайдеры, flex подход,
+            svg-анимация, js калькулятор, адаптив, WOW js + Animate css.</p>
+        </div>
+
+        <a href="https://street-sport.github.io/hunger/" target="blank" class="modal-work__client-title">| ОТКРЫТЬ |
+        </a>
+
+
+      </div><!-- /.modal-work__content -->
+    </div>
+    <!--/.modal-work -->
+
+  </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<!-- Modals mogo -->
+<div class="modal" id="modal_project_mogo">
+  <div class="modal__dialog">
+
+    <button class="modal__close" type="button" data-close>&#10006;</button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+
+        <a target="blank" href="https://street-sport.github.io/hunger/">
+          <img src="img/works/mogo-window.jpg" style="cursor: zoom-in;" alt="">
+        </a>
+      </div>
+      <div class="modal-work__content">
+
+        <div class="modal-work__header">
+          <h3 class="modal-work__title">mogo</h3>
+          <div class="modal-work__info">
+            Сайты <span class="modal-work__info-divider">|</span> 2019
+          </div>
+        </div>
+
+        <div class="modal-work__text">
+          <p>Верстка landing-page по готовому макету. На сайте используется бургер меню, слайдеры, flex подход,
+            адаптив, аккордеон, плавный скролл и модельные окна.</p>
+        </div>
+
+        <a href="https://street-sport.github.io/hunger/" target="blank" class="modal-work__client-title">| ОТКРЫТЬ |
+        </a>
+
+
+      </div><!-- /.modal-work__content -->
+    </div>
+    <!--/.modal-work -->
+
+  </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<!-- Modals POSTER -->
+<div class="modal" id="modal_project_poster">
+  <div class="modal__dialog">
+
+    <button class="modal__close" type="button" data-close>&#10006;</button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+
+
+        <img class="modal-work__photo" src="img/works/poster-window.jpg" style="cursor: zoom-in;" alt="">
+
+      </div>
+      <div class="modal-work__content">
+
+        <div class="modal-work__header">
+          <h3 class="modal-work__title">Плакат</h3>
+          <div class="modal-work__info">
+            Дизайн <span class="modal-work__info-divider">|</span> 2016
+          </div>
+        </div>
+
+        <div class="modal-work__text">
+          <p>Рекламный плакат для популярного интернет магазина.</p>
+        </div>
+
+        <a href="img/works/poster-window.jpg" target="blank" class="modal-work__client-title">| ОТКРЫТЬ | </a>
+
+
+      </div><!-- /.modal-work__content -->
+    </div>
+    <!--/.modal-work -->
+
+  </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<!-- Modals Street-Sport -->
+<div class="modal" id="modal_project_ss">
+  <div class="modal__dialog">
+
+    <button class="modal__close" type="button" data-close>&#10006;</button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+
+        <a href="https://street-sport.com/" target="blank">
+          <img src="img/works/ss-window.jpg" style="cursor: zoom-in;" alt="">
+        </a>
+        
+
+      </div>
+      <div class="modal-work__content">
+
+        <div class="modal-work__header">
+          <h3 class="modal-work__title">Street-Sport</h3>
+          <div class="modal-work__info">
+            Дизайн <span class="modal-work__info-divider">|</span> 2015
+          </div>
+        </div>
+
+        <div class="modal-work__text">
+          <p>Мой личный проект, в который было вложено очень много сил и свободного времени. Была проделана серьезная работа по визуальной составляющей части сайта, включая логотип, баннеры, обложки для книг, оформление YouTube и прочее.</p>
+        </div>
+
+        <a href="https://street-sport.com/" target="blank" class="modal-work__client-title">| ОТКРЫТЬ | </a>
+
+
+      </div><!-- /.modal-work__content -->
+    </div>
+    <!--/.modal-work -->
+
+  </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<!-- Modals Phoenix -->
+<div class="modal" id="modal_project_phoenix">
+  <div class="modal__dialog">
+
+    <button class="modal__close" type="button" data-close>&#10006;</button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+
+        <a href="https://street-sport.com/" target="blank">
+          <img class="modal-work__photo" src="img/works/phoenix-window.jpg" style="cursor: zoom-in;" alt="">
+        </a>
+
+
+      </div>
+      <div class="modal-work__content">
+
+        <div class="modal-work__header">
+          <h3 class="modal-work__title">Phoenix</h3>
+          <div class="modal-work__info">
+            Приложение <span class="modal-work__info-divider">|</span> 2020
+          </div>
+        </div>
+
+        <div class="modal-work__text">
+          <p>Пример верстки приложения на основе готового дизайна, с исползованием html, css и js.</p>
+        </div>
+
+        <a href="https://street-sport.com/" target="blank" class="modal-work__client-title">| ОТКРЫТЬ | </a>
+
+
+      </div><!-- /.modal-work__content -->
+    </div>
+    <!--/.modal-work -->
+
+  </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<!-- Back to top button -->
+<a href="#" id="toTop"></a>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
